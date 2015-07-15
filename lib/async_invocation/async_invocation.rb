@@ -1,5 +1,5 @@
 module AsyncInvocation
-  def self.response
-    Response
+  def self.incorrect
+    Incorrect
   end
 end
