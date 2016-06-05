@@ -1,10 +1,17 @@
 ENV['CONSOLE_DEVICE'] ||= 'stdout'
-ENV['CONSOLE_COLOR'] ||= 'on'
-ENV['LOG_LEVEL'] ||= 'trace'
+ENV['LOG_COLOR'] ||= 'on'
+
+if ENV['LOG_LEVEL']
+  ENV['LOGGER'] ||= 'on'
+else
+  ENV['LOG_LEVEL'] ||= 'trace'
+end
+
+ENV['LOGGER'] ||= 'off'
+ENV['LOG_OPTIONAL'] ||= 'on'
 
 puts RUBY_DESCRIPTION
 
 require_relative '../init.rb'
-require 'runner'
 
-TestLogger = Telemetry::Logger.get 'Test Output'
+require 'test_bench'; TestBench.activate
