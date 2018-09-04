@@ -15,7 +15,7 @@ result = some_method
 
 # Any method invoked on the result will raise an error
 result.any_method
-# => AsyncInvocation::Incorrect::Error
+# => AsyncInvocation::Incorrect::Error (Incorrect invocation of async operation. Intended use is invocation with a block argument. Results should be ignored.)
 ```
 
 ## License
