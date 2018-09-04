@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'evt-async_invocation'
-  s.version = '0.1.0.4'
+  s.version = '0.1.0.5'
   s.summary = "Return value for async method that is accidentally invoked synchronously"
   s.description = ' '
 
