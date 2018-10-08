@@ -1,4 +1,4 @@
-require_relative 'bench_init'
+require_relative './automated_init'
 
 context "AsyncInvocation Response" do
   test "Raises an error when used synchronously" do
